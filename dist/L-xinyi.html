@@ -5,18 +5,35 @@
     <meta charset="utf-8">
     <title>L-xinyi</title>
     <style>
+        .button {
+            background-color: #c2f153;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .button1 {
+            border-radius: 50%;
+        }
+
         body {
-            background-color: slategrey
+            background-color: rgb(134, 218, 148)
         }
 
         h1 {
-            color: peru;
+            color: rgb(63, 153, 205);
             text-align: center;
 
         }
 
         h2 {
-            color: tan;
+            color: rgb(210, 174, 140);
             text-align: center;
             text-decoration: line-through;
         }
@@ -66,31 +83,33 @@
     <h1>碳中和--中国一直在路上</h1>
     <h2>全球变暖？碳循环失衡？
     </h2>
+    <script>
+        function FirstTry() {
+            x = document.getElementById("first");
+            x.innerHTML = "首先，我们来看一组图片.";
+        }
+    </script>
     <p>&nbsp&nbsp&nbsp&nbsp你是否去过森林，被自然的清风撞了个满怀，因盎然的绿意感到心情舒畅；
         你是否曾见过田野，高地上的“大风车”，路边的太阳能照明灯，三峡大坝旁的潮汐发电站 ，
         在感到新奇的同时，感慨于中国在新能源发展上投入的人力，物力，财力以及做出一项项伟大实践决策的魄力；
         你是否常常为身在中国而自豪，却感到自己能做的只是寥寥......</p>
-    <p>&nbsp&nbsp&nbsp&nbsp如果这样，你就来对了地方，赶快加入我们吧，你一定会在这次探索的旅程中收获满满......
-    </p>
-    <p>
+    <button type="button" onclick="FirstTry()" class='button button1'>Want to change?Just click it!</button>
+    <p id="first">
         &nbsp&nbsp&nbsp&nbsp好奇吗？ 那我们现在开始喽！
     </p>
-    <p>
-        &nbsp&nbsp&nbsp&nbsp首先，我们来看一组相关的图片。
-    </p>
+
     <img loading='lazy' src='./efficient_results/img-1616896709678dd82f5e8fb4c0f718262bd7e48f64792.jpg' width='300'
-        height='500' />
+        height='400' />
     <img loading='lazy' src='./efficient_results/img-1616896717609bd86dc147cdab89069d92a1884345285.jpg' width='300'
-        height='500' />
+        height='400' />
     <img loading='lazy' src='./efficient_results/img-16168967123009dc7d2752c48f9a921a2e834c10a2688.jpg' width='300'
-        height='500' />
+        height='400' />
     <img loading='lazy' src='./efficient_results/img-16168967270353a1a82b101862380fb3a6623118d5533.jpg' width='300'
-        height='500' />
+        height='400' />
 
     <div>
         <a href="./index.html" rel="index">上一页</a>
     </div>
-
 </body>
 
 </html>
