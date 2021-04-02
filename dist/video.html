@@ -1,0 +1,107 @@
+<!doctype html>
+
+<html lang=en>
+
+<head>
+    <title>视频背景</title>
+
+    <style>
+        body {
+            margin: 0;
+            background: transparent;
+        }
+
+        video {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -100;
+            background: url('images\\background.jpg') no-repeat;
+            background-size: cover;
+        }
+
+        #video {
+            font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
+            font-weight: 100;
+            background: rgba(0, 0, 0, 0.3);
+            color: white;
+            padding: 2rem;
+            width: 33%;
+            margin: 2rem;
+            float: right;
+            font-size: 1.2rem;
+        }
+
+        #video h1 {
+            font-size: 3rem;
+            text-transform: uppercase;
+            margin-top: 0;
+            letter-spacing: .3rem;
+        }
+
+        #video a {
+            display: inline-block;
+            color: #fff;
+            text-decoration: none;
+            background: rgba(0, 0, 0, 0.5);
+            padding: .5rem;
+            transition: .6s background;
+        }
+
+        #video a:hover {
+            background: rgba(0, 0, 0, 0.9);
+        }
+
+        @media screen and (max-width: 500px) {
+            #video {
+                width: 50%;
+            }
+        }
+    </style>
+    <meta charset=utf-8>
+</head>
+
+<body>
+    <video playsinline autoplay muted loop poster="video.jpg" id="bgvideo">
+        <!-- <source src="video.webm" type="video/webm"> -->
+        <source src="videos/video.mp4" type="video/mp4">
+    </video>
+    <div id="video">
+        <h1>碳中和</h1>
+        <p>
+            碳中和是指国家、企业、产品、活动或个人在一定时间内直接或间接产生的二氧化碳或温室气体排放总量，通过使用低碳能源取代化石燃料、植树造林、节能减排等形式，以抵消自身产生的二氧化碳或温室气体排放量，实现正负抵消，达到相对“零排放”。
+        </p>
+        <p>
+            要达成碳中和一般有两种做法：
+        </p>
+        <p>
+            通过碳补偿机制，使其产生的碳排放量，等同于在其它地方减少的碳排放量。例如：植树造林、购买再生能源凭证。
+        </p>
+        <p>
+            使用低碳或零碳排的技术（参见低碳经济）。例如使用再生能源（如风能和太阳能），以避免因燃烧化石燃料而排放二氧化碳到大气中；最终目标是仅使用低碳能源，而非化石燃料，使碳的释放与吸收回地球的量达平衡不增加。
+        </p>
+        <p>
+            通过碳交易付钱给其他国家或地区以换取其二氧化碳排放权。由于此一作法有如中古世纪的赎罪券，并未真正达成减少二氧化碳总排放量的效果，因而常遭受批评[1][2]。
+        </p>
+        <p>
+            碳足迹为是否达到碳中和的重要指标。其不仅考虑二氧化碳，同时也考虑包含了其他温室气体的排放（例如：甲烷）。
+        </p>
+        <p>
+            净零排放（英语：net zero emissions）指的是全面性地将一国家或地区的温室气体净排放降为零，包含间接的温室气体排放。其涵盖范围比碳中和更广，近年更常被使用。
+        </p>
+    </div>
+
+    <script>
+        var video = document.getElementById("bgvideo");
+        video.addEventListener('touchstart', function (e) {
+            e.preventDefault();
+            video.play();
+        });
+    </script>
+</body>
+
+</html>
