@@ -3,36 +3,59 @@
     <title>
         Welcome to Marvel Universe!
     </title>
+    <style>
+        body{
+            background-color: thistle;
+        }
+    </style>
+    <script>
+        function dell(){
+            document.getElementById("demo").innerHTML="Wanna know more?";
+
+        }
+    </script>
+    <script>
+        function time(){
+            document.getElementById("showtime").innerHTML=Date();
+        }
+    </script>
 
 </head>
 <body>
+    <script>
+        window.alert(1024);
+    </script>
     <h1>
         <big>Welcome to Marvel Universe!</big>
     </h1>
-    <img loading="lazy" src="/kob-image/first.jfif" width="200" heigth='500'>
+    <img loading="lazy" src="/dist/kob-image/1.jfif" width="200" heigth='500'>
     <h2>
         <em>Let me introduce them to you</em>
     </h2>
     <p>
-        <img loading="lazy" src="/kob-image/CaptainAmerica.jpg" width="300" heigth="100">
+        <img loading="lazy" src="/dist/kob-image/CaptainAmerica.jpg" width="300" heigth="100">
         <strong>Captain America</strong>&nbsp;&nbsp;America’s World War II Super-Soldier continues his fight in the present as an Avenger and untiring sentinel of liberty.
     </p>
     <p>
-        <img loading="lazy" src="/kob-image/blackwidow.jpg" width="300" heigth="100">
+        <img loading="lazy" src="/dist/kob-image/blackwidow.jpg" width="300" heigth="100">
         <strong>Black Widow</strong> &nbsp;&nbsp; Trusted by some and feared by most, the Black Widow strives to make up for the bad she had done in the past by helping the world, even if that means getting her hands dirty in the process.
     </p>
     <p>
-        <img loading="lazy" src="/kob-image/Thor.jpg" width="300" heigth="100">
+        <img loading="lazy" src="/dist/kob-image/Thor.jpg" width="300" heigth="100">
         <strong>Thor Odinson</strong> &nbsp;&nbsp;Thor Odinson wields the power of the ancient Asgardians to fight evil throughout the Nine Realms and beyond.
     
-    <p>
+    <p id="demo">
         <del>
             Wanna leave now?
         </del>
-        <br>
-            Wanna know more?
-        <br>
+        <button type="button" onclick="dell()">Don't want go?</button>
+     </p>   
+     <p>
         <a href="https://www.marvel.com/" target="_blank"><em>Click me to find more fun!<em></a>
+    </p>
+    <p id="showtime">
+        <button type="button" onclick="time()">click me to show time</button>
+
     </p>
     <div id="footer" style="background-color: indigo;clear:both;text-align: center;">
         Marvel Universe
