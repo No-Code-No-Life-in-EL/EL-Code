@@ -1,0 +1,167 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'montserrat',sans-serif;
+}
+
+.landing-page1{
+    width: 100%;
+    height:100vh;
+    background:dimgrey;
+    position:relative;
+    overflow:hidden;
+}
+
+.landing-page1::after{
+    content: '';
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background: url(../images/烟囱排烟2.jpg) no-repeat;
+    background-size: cover;
+    opacity: .3;
+    animation: anim 25s linear infinite;
+}
+
+@keyframes anim{
+    50%{
+        transform:scale(1.5);
+    }
+}
+
+.landing-page2{
+    width: 100%;
+    height:800px;
+    background:papayawhip;
+    position:relative;
+    overflow:hidden;
+}
+
+.landing-page2::after{
+    content: '';
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background: url(../images/shanghai.jpg) no-repeat;
+    background-size: cover;
+    opacity: .3;
+    animation: anim 25s linear infinite;
+}
+
+@keyframes anim{
+    50%{
+        transform:scale(1.5);
+    }
+}
+
+.page-content{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    z-index:1;
+    width:100%;
+    max-width:990px;
+    text-align:center;
+    padding:0 40px;
+    box-sizing: border-box;
+}
+
+.page-content p{
+    margin: 2cm;
+    font-size: large;
+}
+
+.page-content a{
+    display:inline-block;
+    text-decoration: none;
+    color:black;
+    border:2px solid black;
+    text-transform:uppercase;
+    padding:10px 20px;
+    transition:0.4s linear;
+}
+
+.page-content a:hover{
+    color:cornsilk;
+    background-color:cornflowerblue;
+}
+
+.section{
+    top:0;
+    width:100%;
+    height:100%;
+    position:relative;
+}
+
+.side-left{
+    padding-top:70px;
+    width:50%;
+    float:left;
+    height:800px;
+}
+
+
+.co2_data{
+    left: 40px;
+    top:40px;
+    padding-top: 20px;
+}
+
+.side-right{
+    width:40%;
+    float:right;
+    height:900px;
+    padding:30px;
+}
+
+
+.part1 h3{
+    text-align: center;
+    font-family:sans-serif;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+.part1 p{
+    text-indent: 2rem;
+}
+.part2 p{
+    text-align: center;
+    margin-top: 100px;
+}
+
+img{
+    width:70%;
+    position:relative;
+    left:120px;
+    top:60px;
+}
+
+.img2{
+    text-align: center;
+    width: 1024px;
+    height: 800px;
+}
+
+.hometown{
+    width:800px;
+    height:1460px;
+    overflow: scroll;
+    scrollbar-width: none; /* firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.hometown::-webkit-scrollbar {
+    display: none; /* Chrome Safari */
+  }
+
+
+
+
+
