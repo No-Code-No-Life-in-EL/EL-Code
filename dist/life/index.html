@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>
+            test
+        </title>
+    <style>
+        .font{
+            font-family:in;
+            font-size: 1.5em;
+            color: aliceblue;
+            line-height: 50px;
+            text-indent: 10px;
+        }
+        .font2{
+            font-family: sheep;
+            color:blueviolet;
+            font-size:  2.5em;
+        }
+        @font-face {
+                font-family: sheep;
+                src: url('font/FZZH-YTTJW.TTF');
+            }
+        @font-face {
+            font-family: in;
+            src: url('font/FZSJ-AQMLTJW.TTF');
+        }
+        #d{
+            display: block;
+        }
+        #d1{
+            position:absolute;
+            background:url(./picture/bycycleBackground2.jpg)  no-repeat center center;
+            background-size:cover;
+            background-attachment:fixed;
+            opacity: 0.8;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+            display:none;
+            /*visibility: hidden;*/
+        }
+        #d2{
+            position: absolute;
+            background:url(./picture/lightBackground2.jpg)  no-repeat center center;
+            background-size:cover;
+            background-attachment:fixed;
+            opacity: 0.8;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+            display:none;
+            /*visibility: hidden;*/
+        }
+        #d3{
+            position: absolute;
+            background:url(./picture/plantBackground2.jpg)  no-repeat center center;
+            background-size:cover;
+            background-attachment:fixed;
+            opacity: 0.8;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+            display:none;
+            /*visibility: hidden;*/
+        }
+        #d4{
+            position: absolute;
+            background:url(./picture/plasticBachgroud.jpg)  no-repeat center center;
+            background-size:cover;
+            background-attachment:fixed;
+            opacity: 0.8;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+            display:none;
+            /*visibility: hidden;*/
+        }
+        #d5{
+            position: absolute;
+            background:url(./picture/recycleBackground2.jpg)  no-repeat center center;
+            background-size:cover;
+            background-attachment:fixed;
+            opacity: 0.8;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+            display:none;
+            /*visibility: hidden;*/
+        }
+        #img1{
+            position:absolute;
+            left: 10px;
+            top:50px;
+            -webkit-animation: floatToTop1 5s;
+            animation-iteration-count: infinite;
+        }
+        #img2{
+            position:absolute;
+            left: 460px;
+            top: -50px;
+            -webkit-animation: floatToTop2 5s;
+            animation-iteration-count: infinite;
+        }
+        #img3{
+            position:absolute;
+            left: 960px;
+            top: 50px;
+            -webkit-animation: floatToTop3 5s;
+            animation-iteration-count: infinite;
+        }
+        @-webkit-keyframes floatToTop1
+        {
+            0%   {top:50px; left: 60px;}
+	        25%  {top:120px;left: 180px;}
+	        50%  {top:50px; left: 60px;}
+	        75%  {top:120px;left: 180px;}
+	        100% {top:50px; left: 60px;}
+
+        }
+        @-webkit-keyframes floatToTop2
+        {
+            0%   {top:-100px;}
+	        25%  {top:50px;}
+	        50%  {top:-100px;}
+	        75%  {top:50px;}
+	        100% {top:-100px;}
+
+        }
+        @-webkit-keyframes floatToTop3
+        {
+            0%   {top:50px; left: 900px;}
+	        25%  {top:120px;left: 780px;}
+	        50%  {top:50px; left: 900px;}
+	        75%  {top:120px;left: 780px;}
+	        100% {top:50px; left: 900px;}
+
+        }
+        #img4{
+            position: absolute;
+            left: 300px;
+            top: 400px;
+            -webkit-animation: floatToBottom1 5s;
+            animation-iteration-count: infinite;
+        }
+        #img5{
+            position: absolute;
+            left: 700px;
+            top: 400px;
+            -webkit-animation: floatToBottom2 5s;
+            animation-iteration-count: infinite;
+        }
+        #imgplastic1{
+            position: relative;
+        }
+        @-webkit-keyframes floatToBottom1
+        {
+            0%   {top:400px;left: 200px;}
+	        25%  {top:300px;left: 300px;}
+	        50%  {top:400px;left: 200px;}
+	        75%  {top:300px;left: 300px;}
+	        100% {top:400px;left: 200px;}
+
+        }
+        @-webkit-keyframes floatToBottom2
+        {
+            0%   {top:400px;left: 700px;}
+	        25%  {top:300px;left: 600px;}
+	        50%  {top:400px;left: 700px;}
+	        75%  {top:300px;left: 600px;}
+	        100% {top:400px;left: 700px;}
+
+
+        }
+        body{
+            background:url(./picture/sky3.jfif)  no-repeat center center;
+            background-size:cover;
+            background-attachment:fixed;
+            background-color:#5a5252;
+            z-index: 1;
+        }
+    </style>
+    <script>
+        /*window.onload = function() {
+            document.getElementById("link").onclick = function(){
+            document.getElementById("d").style.visibility = "visible";
+         }
+        }*/
+        function show(a){
+            var temp=document.getElementById(a);
+            temp.style.display='block';
+            
+        }
+        function disappear(a){
+            var temp=document.getElementById(a);
+            temp.style.display='none';
+        }
+    </script>
+    <script>
+        function bigImg(x){
+            x.style.height="450px";
+            x.style.width="400px";
+        }
+        function normalImg(x){
+            x.style.height="450px";
+            x.style.width="350px";
+        }
+        </script>
+    </head>
+    <body>
+        <div id="d" style="position: absolute; bottom: 260px; right: 350px;">
+            <p class="font2">
+                <b>生活中我们该如何助力碳中和？</b>
+            </p>
+        </div>
+        <div id="d1">
+            <p class="font" >
+                &nbsp;&nbsp;交通运输行业要在2030年前如期实现碳达峰目标，必须在交通出行结构上做文章，
+                向低能耗、低排放、高效率的交通方式转变，降低单位运量交通能耗和碳排放。慢
+                行交通与公共交通的一体化融合发展，将是实现交通出行结构优化的关键.
+                <br/>
+                &nbsp;&nbsp;以一辆共享单车为例，经测算，在生产、运输、报废处理全生命周期中，大概产生
+                76千克二氧化碳排放，然而在使用寿命内，平均骑行距离超过4000公里，估算可减少
+                碳排放约105千克，不仅足以实现“零碳”，还能为整个交通运输部门综合碳减排做出贡献
+                <br/>
+                计算公式：
+                <br/>
+                &nbsp;&nbsp;开车的二氧化碳排放量(kg)=油耗量(L)×0.785；
+                <br/>
+                &nbsp;&nbsp;火车旅行的二氧化碳排放量(kg)=行驶距离(km)×0.04；
+                <br/>
+                &nbsp;&nbsp;乘飞机旅行2000m=278kg碳排放量=3棵树；
+            </p>
+            <div style="position:absolute;right:0px;bottom:0px;">
+                <img src="picture/return0.png" style="margin-bottom: 0cm;margin-left: 0cm;" type="button" onclick="disappear('d1');show('d')" height="100px" width="100px">back</button>
+            </div>
+        </div>
+        <div id=d2>
+            <p class="font">
+                换节能灯泡：使用节能灯泡取代钨丝灯泡，节能灯泡的使用寿命更比白炽灯长6倍-8倍，节能约60%。
+            </br>
+            &nbsp;&nbsp;换节能灯泡：使用节能灯泡取代钨丝灯泡，节能灯泡的使用寿命更比白炽灯长6倍-8倍，节能约60%。
+            </p>
+            <p class="font">
+            <br/>
+            1度电可以干什么？<br/>
+            &nbsp;&nbsp; &nbsp;&nbsp;一度电=
+            <br/>
+            电炉炼钢 1.25-1.5千克=织布 8.7-10米=加工面粉 16千克=灌溉小麦 0.14亩次=灌液化气 10瓶
+<br/>
+=生产啤酒 15瓶=采煤 27千克=生产化肥 22千克=生产洗衣粉 11.8千克
+<br/>
+=供电车行驶 0.86公里
+<br/>
+    =供电扇主运输（50瓦） 20小时=电冰箱（断续） 20-24小时=电灯（40瓦） 25小时
+            </p>
+            <img src="picture/light3.JPG" style="position: absolute; bottom: 300px; right: 50px;" height="200px" width="150px" >
+            <div style="position:absolute;right:0px;bottom:0px;">
+                <img src="picture/return0.png" style="margin-bottom: 0cm;margin-left: 0cm;" type="button" onclick="disappear('d2');show('d')" height="100px" width="100px">back</button>
+            </div>
+        </div>
+        <div id=d3>
+            <p class="font">
+                对环保有益的植物常见的有：<br/>
+　　1.仙人球，俗称草球。仙人球有吸收电磁辐射的作用，也是天然的空气清新器，还具有吸附尘土，净化空气的作用。
+　　2.吊兰，叶簇生，似花朵，四季常绿，是著名的观叶花卉，被人们誉之为“空中花卉”。据研究，吊兰具有吸收有毒气体的功能，一般房间养有一盆吊兰，空气中由吸烟及建材散发出的有毒气体，即可吸收殆尽，起到净化空气的作用。<br/>
+　　3龙舌兰,又名龙舌掌、番麻。长江流域及以北地区常温室盆栽。喜排水良好，肥沃而湿润的沙质壤。<br/>
+　　4，绿萝。是非常优良的室内装饰植物之一，攀藤观叶花卉。萝茎细软，叶片娇秀。既可净化空气，又可给居室平添融融情趣.<br/>
+　　5、芦荟可以清除空气中的有害物质，特别是在对付甲醛上颇有功效。有研究表明，虎尾兰和吊兰，可吸收室内80%以上多种有害气体，尤其是吸收甲醛的能力超强。芦荟也是吸收甲醛的个中好手，可以吸收1立方米空气中所含的90%的甲醛。<br/>
+　　6、常青藤、铁树它们在抵抗二氧化硫、氟、氯、乙醚、乙烯、汞蒸气、铅蒸气、一氧化碳、过氧化氮等有害气体上，各有用武之地。家中电器、塑料制品等散发的这些有毒气体，因为有了这些植物保镖的抵抗，危害到你的机会就会大大减少。<br/>
+   &nbsp;&nbsp;比如一棵冷杉30年能吸收111kg二氧化碳，平均每年吸收4kg左右
+   <br/>
+   &nbsp;&nbsp;同时，减少食肉量也可以助力环保：肉食的二氧化碳排放量(kg)=肉食量(kg)×1.24
+            </p>
+            <div style="position:absolute;right:0px;bottom:0px;">
+                <img src="picture/return0.png" style="margin-bottom: 0cm;margin-left: 0cm;" type="button" onclick="disappear('d3');show('d')" height="100px" width="100px">back</button>
+            </div>
+        </div>
+        <div id=d4>
+            <img src="picture/plastic_1.jpg" height="200px" width="400px">
+            <p class="font">
+                &nbsp;&nbsp;科学家曾用C14同位素跟踪考察了塑料在土壤中的降解情况，结果表明，塑料的降解速度虽然与环境条件（降雨量、透气性、温度等）有关，但总体而言，塑料降解的速度非常缓慢，通常需要200年至400年。
+                <br/>
+                &nbsp;&nbsp;我们应尽量减少一次性塑料餐具和纸制餐具的使用。任何一次性餐具不仅不利于环保，也是对资源的最大的浪费。我们在日常生活中，不应过度依赖塑料袋。
+            大部分消费者把超市塑料袋带回家中当垃圾袋使用，丢弃后对环境造成二次污染。因此，我们应拒绝使用塑料袋买菜或盛装食物，买菜可用菜篮子或布袋避免使用上的一次性，减少对环境的污染。而盛装食物可以使用自备的不锈钢或塑胶饭盒，既卫生，又环保，还不会对身体造成危害。
+              <br/>
+              &nbsp;&nbsp; 数据表明：拒绝使用塑料袋包装产品可以使包装浪费减少10%，每年就可以降低540kg二氧化碳的排放。 
+            </p>
+        
+            
+           <div style="position:absolute;right:0px;bottom:0px;">
+             <img src="picture/return0.png" style="margin-bottom: 0cm;margin-left: 0cm;" type="button" onclick="disappear('d4');show('d')" height="100px" width="100px">back</button>
+         </div>
+           
+        </div>
+        <div id=d5>
+            <p class="font">
+                生活中可循环利用的有:一旧废的金属、贵金属、塑料、木料、橡胶、纸张、棉麻制品.等等.二是废水、
+            污水、雨水、废油、污油.三是垃圾中可以生成肥料废物;四是旧石料、石砖.1. 循环使用是将废品变为可再利用材料的过程,它与重复利用不同,后者仅仅指再次使用某件产品.2. 循环提供了一种既能减少垃圾填埋又能节约自然资源的方法,因此很具有吸引力.
+            <br/>
+            &nbsp;&nbsp;生活中许多对社会、经济和环境方面产生负面影响的行为都根植于单向的“索取、制造、耗费”模式。这种消耗和浪费材料的经济模式已经到了极限，环境已经无力维持。通过采取循环利用的方法——将废物转变为可有效利用资源——我们将创造一个既可持续又能产生效益的经济。
+
+向循环模式的转变在建筑领域最为紧迫。建筑领域每年消耗30亿吨原材料，是最大的资源消耗者，全球废弃物的三分之一由其产生而大部分最终被填埋。
+            
+            </p>
+            <img src="picture/recycle1.PNG" height="100px" width="500px" style="position: absolute; bottom: 30pxpx; right: 400px;">
+            <div style="position:absolute;right:0px;bottom:0px;">
+                <img src="picture/return0.png" style="margin-bottom: 0cm;margin-left: 0cm;" type="button" onclick="disappear('d5');show('d')" height="100px" width="100px">back</button>
+            </div>
+        </div>
+        
+         <img id="img1" src="picture/bike1.png" onclick="show('d1');disappear('d')" width="350px" height="450px" >
+           
+        <img id="img2" src="picture/light0.png" onclick="show('d2');disappear('d')" width="350px" height="450px">   
+        <img id="img3"src="picture/vegetable0.png" onclick="show('d3');disappear('d')" width="350px" height="450px"> 
+      
+        
+        <img id="img4" src="picture/plastic0.png" onclick="show('d4');disappear('d')" width="350px" height="450px">
+        <img id="img5" src="picture/recycle0.png" onclick="show('d5');disappear('d')" width="350px" height="450px">  
+      
+        
+        <div>
+            
+        </div>
+    </body>
+</html>

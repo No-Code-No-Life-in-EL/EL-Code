@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+       
+    </style>
+    <script>
+        function show(){
+            document.getElementById("div").style.display="";
+            alert(document.getElementById("div").style.display)
+        }
+       function hidden(){
+           document.getElementById("div").style.display="none";
+           alert(document.getElementById("div").style.display)
+        }
+    </script>
+</head>
+<body>
+    <input name="name" type="button" onClick="show();" value="显示">
+    <div id="div" style="display: none" onMouseout="hidden();">show it</div>
+</body>
+</html>
+
+

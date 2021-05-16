@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        Link to a handsome man>
+    </title>
+    <style>
+        body{
+            /*background:url(./picture/firstPageBackground.jpg)  no-repeat center center;
+            background-size:cover;
+            background-attachment:fixed;
+            background-color:#5a5252;*/
+            background-color: chartreuse;
+        }
+        /* 定义一个div用于覆盖整个页面，这个div的z-index大于body，小于服务评分div */
+        #temp{
+            background: #000;
+            position: absolute; 
+            left: 0px; top: 0px; 
+            width: 100%; filter: alpha(opacity=30); 
+            opacity: 0.3; 
+            display: none; 
+            z-index: 2 
+            /*background-color: #000;
+            opacity: 0.3;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+            visibility: hidden;*/
+        }
+        /* 评分div，其z-index最大(当显示时) */
+        #mark{
+            background-color: rgb(255,255,255);
+            width: 400px;
+            height: 250px;
+            z-index: 3;
+            visibility: hidden;
+        }
+        /* 包含了服务评分、购物车等的div */
+       /* #main{
+            background-color: rgb(255,255,255);
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }*/
+    </style>
+    <script>
+        window.onload = function() {
+        document.getElementById("link").onclick = function(){
+        document.getElementById("temp").style.visibility = "visible";
+        document.getElementById("mark").style.visibility = "visible";
+         }
+        }
+    </script>
+</head>
+<body>
+   
+<div id="temp"></div>
+<div id="mark"></div>
+<div id="main"></div>
+<a id="link"><i>点击我进行层叠</a>
+
+</body>
+</html>
