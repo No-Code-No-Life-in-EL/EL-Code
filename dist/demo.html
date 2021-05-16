@@ -1,25 +1,87 @@
-<!DOCTYPE html>
+<!doctype html>
 
+<html lang=en>
 <head>
     <meta charset="utf-8">
     <title>demo</title>
     <style>
-        body {
+        /* body {
             background-image: url('./efficient_results/background3.png');
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-size: 100%;
 
+        } */
+
+        body {
+            margin: 0;
+            background: transparent;
+        }
+
+        video {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -100;
+            background: url('images\\background.jpg') no-repeat;
+            background-size: cover;
+        }
+
+        #video {
+            font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
+            font-weight: 100;
+            background: rgba(0, 0, 0, 0.3);
+            color: white;
+            padding: 2rem;
+            width: 33%;
+            margin: 2rem;
+            float: right;
+            font-size: 1.2rem;
+        }
+
+        #video h1 {
+            font-size: 3rem;
+            text-transform: uppercase;
+            margin-top: 0;
+            letter-spacing: .3rem;
+        }
+
+        #video a {
+            display: inline-block;
+            color: #fff;
+            text-decoration: none;
+            background: rgba(0, 0, 0, 0.5);
+            padding: .5rem;
+            transition: .6s background;
+        }
+
+        #video a:hover {
+            background: rgba(0, 0, 0, 0.9);
+        }
+
+        @media screen and (max-width: 500px) {
+            #video {
+                width: 50%;
+            }
         }
     </style>
 </head>
 
 <body>
-
+    <video playsinline autoplay muted loop poster="video.jpg" id="bgvideo">
+        <!-- <source src="video.webm" type="video/webm"> -->
+        <source src="videos/background.mp4" type="video/mp4">
+    </video>
     <h1>
-        <br />
-        碳中和之我们的家乡
+            碳中和之我们的家乡
     </h1>
+    <h2>
+        (鼠标移动到你的家乡，就可以看到家乡的碳中和发展状况哦)
+    </h2>
     <style type='text/css'>
         h1 {
             text-align: center;
@@ -28,6 +90,15 @@
             font-size: 80px;
             word-spacing: 20px;
             font-family: '楷体';
+        }
+        h2{
+            text-align: center;
+            color: white;
+            font-weight: bolder;
+            font-size: 40px;
+            word-spacing: 15px;
+            font-family: '楷体';
+
         }
 
         p {
@@ -291,7 +362,7 @@
 
     </style>
     <div class="relative text"
-        style="margin-left: -100px; margin-top: -200px; padding: 20px; word-wrap: break-word; word-break: normal;height:700px;width:450px;overflow:scroll;background:#d3f3dd1c;font-size: 30px;line-height:2em;font-family: '楷体'">
+        style="margin-left: -100px; margin-top: -200px; padding: 20px; word-wrap: break-word; word-break: normal;height:700px;color: white;width:450px;overflow:scroll;background:#d3f3dd1c;font-size: 30px;line-height:2em;font-family: '楷体'">
         &nbsp&nbsp&nbsp&nbsp新冠疫情肆虐全球，对人们的生命和生计造成了严重的威胁。但与此同时，一个更大的威胁正在悄然迫近：气候变化！<br />
         &nbsp&nbsp&nbsp&nbsp中国的碳排放占全世界排放总量的28%,目前,中国已经设定了雄心勃勃的减排目标:2030年二氧化碳排放要达到峰值，2060年要实现碳中和！<br />
         &nbsp&nbsp&nbsp&nbsp要达到这一目标殊为不易,但我们却势在必行！<br />
@@ -325,6 +396,7 @@
         <br /><img src="./efficient_results/anhui3.png" width='300' height='200'>
     </div>
 
+
     <div class='shaanxi' onmouseover="document.getElementById('shaanxi').style.visibility ='visible'">
         <img src='./efficient_results/mark.png' width='20' height='20'>
     </div>
@@ -354,6 +426,7 @@
     </div>
 
 
+
     <div class='guangxi' onmouseover="document.getElementById('guangxi').style.visibility ='visible'">
         <img src='./efficient_results/mark.png' width='20' height='20'>
     </div>
@@ -373,6 +446,7 @@
 
     </div>
 
+    
 
     <div class='nanjing' onmouseover="document.getElementById('nanjing').style.visibility ='visible'">
         <img src='./efficient_results/mark.png' width='20' height='20'>
@@ -782,5 +856,14 @@
         &nbsp&nbsp&nbsp&nbsp贵州将坚定不移走生态优先、绿色低碳的高质量发展道路，全力打好实现“碳达峰、碳中和”这场硬仗<br />
         <br /><img src="./efficient_results/guizhou.png" width='300' height='200'>
     </div>
-
+    <script>
+        var video = document.getElementById("bgvideo");
+        video.addEventListener('touchstart', function (e) {
+            e.preventDefault();
+            video.play();
+        });
+    </script>
 </body>
+
+
+</html>
