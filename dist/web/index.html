@@ -1,20 +1,72 @@
 <!DOCTYPE html>
+
 <head>
-    <meta charset="utf-8">
-    <title>EasycodeEasylife</title>
-    <link href="./style.css" rel='stylesheet'>
+    <meta charset="urf-8">
+    <title>No-Code-No-Life</title>
+    <link href="./style_AGESE.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/echarts.common.min.js@1.0.0/echarts.common.min.js"></script>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <script src='AGESE.js'></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+
 <body>
-    <div class="container">
-        <div class="splitlayout">
-            <div class="side side-left">
-                <div class='content'>
-                    <p>HELLO</p>
-                </div>
-            </div>
-            <div class="side side-right">
-                    <p>WORLD</p>
-            </div>
+    <div class="landing-page1">
+        <div class="page-content">
+            <h1>中国碳足迹</h1>
+            <p>
+                随着工业的不断发展，越来越多的煤、油气被开采燃烧，这加剧了人类对家园的影响。
+            </p>
+            <a href='https://www.sciencedaily.com/terms/carbon_dioxide.htm'>了解更多</a>
         </div>
     </div>
-</body>
+    <div class="section">
+        <div class="side side-left">
+            <div class='content'>
+                <div id="main" style="width: 800px;height:700px;"></div>
+                <p id=co2_data>数据来源：Global Carbon Project; Carbon Dioxide Information Analysis Center(CDIAC)</p>
+            </div>
+        </div>
+        <div class="side side-right">
+            <div class='part1'>
+                <h3>二氧化碳排放概况</h3>
+                <p> 全球二氧化碳排放在工业革命之前排放量非常低。
+                    直到20世纪中叶，排放量的增长仍然相对缓慢。
+                    根据牛津大学的汇总统计，1950年全球二氧化碳排放量仅超过50亿吨，
+                    与美国目前的排放总量相当。到1990年，这一数字翻了两番，达到220亿吨。</p>
+                    <img id='img1' src='../images/tanpaifang01.jfif'>
+                </div>
+                <div class='part2'>
+                    <p>全球碳排放量变化图</p>
+                    <img id='img1' src='../images/CO2_1850_2011.jpg'>
+                </div>
+            </div>
+        </div>
+        <div id='hometown'>
+            <iframe src="../hometown.html" frameborder=0 scrolling='no' style="width: 100%;height: 1500px;"></iframe>
+        </div>
+        <div class="landing-page2">
+            <div class="page-content">
+                <h1>我们的愿景</h1>
+                <p>
+                    中国在新世纪承诺，将在2030年前实现碳达峰，2060年前实现碳中和
+                </p>
+                <a href='https://mp.weixin.qq.com/s/Ngau0t4IUcfzz0FRZNxPGA'>什么是碳达峰，碳中和</a>
+            </div>
+        </div>
+        <div>
+            <iframe src="../life/index.html" frameborder=0 scrolling='no' style="width: 100%;height: 800px;"></iframe>
+        </div>
+        <div>
+            <iframe src="../forest/index.html" frameborder=0 scrolling='yes' style="width: 100%;height: 900px;"></iframe>
+        </div>
+        
+        
+        
+        
+        
+        
+        <script src="echarts.js"></script>
+    </body>
+    
+    </html>
